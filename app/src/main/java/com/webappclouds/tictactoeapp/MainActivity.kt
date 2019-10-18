@@ -123,13 +123,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         if (winner == 1) {
-
+            player1WinsCount ++
             Toast.makeText(this, "Player 1 is the winner", Toast.LENGTH_LONG).show()
-
+            restartGame()
         } else if (winner == 2) {
-
+            player2WinsCount ++
             Toast.makeText(this, "Player 2 is the winner", Toast.LENGTH_LONG).show()
-
+            restartGame()
         }
     }
 
@@ -139,6 +139,10 @@ class MainActivity : AppCompatActivity() {
             if (!(player1.contains(cellId) || player2.contains(cellId))) {
                 emptyCells.add(cellId)
             }
+        }
+
+        if(emptyCells.size == 0){
+            restartGame()
         }
 
         val r = Random()
@@ -161,7 +165,40 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        playGame(cellId,butSelected)
+        playGame(cellId, butSelected)
 
+    }
+
+    var player1WinsCount = 0
+    var player2WinsCount = 0
+
+    fun restartGame() {
+        activePlayer = 1
+        player1.clear()
+        player2.clear()
+
+        for (cellId in 1..9) {
+            var butSelected: Button?
+            butSelected = when (cellId) {
+                1 -> but1
+                2 -> but2
+                3 -> but3
+                4 -> but4
+                5 -> but5
+                6 -> but6
+                7 -> but7
+                8 -> but8
+                9 -> but9
+                else -> {
+                    but1
+                }
+            }
+
+            butSelected.text = ""
+            butSelected.setBackgroundResource(R.color.whiteBackground)
+            butSelected.isEnabled = true
+        }
+
+        Toast.makeText(this, "Player1: $player1WinsCount, Player2: $player2WinsCount", Toast.LENGTH_LONG).show()
     }
 }
