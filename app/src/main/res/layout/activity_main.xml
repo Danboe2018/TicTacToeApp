@@ -19,21 +19,24 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginLeft="3pt"
-            android:background="@color/whiteBackground" />
+            android:background="@color/whiteBackground"
+            android:onClick="butClick" />
 
         <Button
             android:id="@+id/but2"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginLeft="3pt"
-            android:background="@color/whiteBackground" />
+            android:background="@color/whiteBackground"
+            android:onClick="butClick"/>
 
         <Button
             android:id="@+id/but3"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginLeft="3pt"
-            android:background="@color/whiteBackground" />
+            android:background="@color/whiteBackground"
+            android:onClick="butClick"/>
 
     </TableRow>
 
@@ -48,21 +51,24 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginLeft="3pt"
-            android:background="@color/whiteBackground" />
+            android:background="@color/whiteBackground"
+            android:onClick="butClick"/>
 
         <Button
             android:id="@+id/but5"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginLeft="3pt"
-            android:background="@color/whiteBackground" />
+            android:background="@color/whiteBackground"
+            android:onClick="butClick"/>
 
         <Button
             android:id="@+id/but6"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginLeft="3pt"
-            android:background="@color/whiteBackground" />
+            android:background="@color/whiteBackground"
+            android:onClick="butClick"/>
     </TableRow>
 
     <TableRow
@@ -76,21 +82,24 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginLeft="3pt"
-            android:background="@color/whiteBackground" />
+            android:background="@color/whiteBackground"
+            android:onClick="butClick"/>
 
         <Button
             android:id="@+id/but8"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginLeft="3pt"
-            android:background="@color/whiteBackground" />
+            android:background="@color/whiteBackground"
+            android:onClick="butClick"/>
 
         <Button
             android:id="@+id/but9"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginLeft="3pt"
-            android:background="@color/whiteBackground" />
+            android:background="@color/whiteBackground"
+            android:onClick="butClick"/>
 
     </TableRow>
 </TableLayout>
